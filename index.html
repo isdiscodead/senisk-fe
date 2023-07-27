@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "./reset.css">
-    <link rel = "stylesheet" href = "./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>시니스크</title>
+  </head>
 
-    <title>시니스크1</title>
-</head>
-<body>
-    <div id = "wrapper">
-        <header id = "header">
-            <h2>고령층을 위한 키오스크 제작 플랫폼</h2>
-            <h2><시니스크></h2>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">시니스크</a>
+              <span class="navbar-desc">고령층을 위한 키오스크 제작 플랫폼</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        </header>
-        <section id = "main">
-            <section class = "video">
-                <div>
-                    <a href = "">
-                        <img src = "img/tumbnail.png" alt = "" />
-                        <h3>비디오 출력</h3>
-                    </a>
+              <!-- 사이드 메뉴바 -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">시니스크</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div>
-                    <input type = "button" value = "만들기 시작" >
+
+                <div class="offcanvas-body">
+                    <form class="d-flex mt-3" role="login">
+                        <div class="mr-5">
+                            <input class="form-control me-2" type="text" placeholder="아이디" aria-label="user-id">
+                            <input class="form-control me-2" type="text" placeholder="비밀번호" aria-label="password">
+                        </div>
+                        <button class="btn btn-outline-success" type="submit">로그인</button>
+                        <button class="btn btn-outline-secondary" type="button">회원가입</button>
+                      </form>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">둘러보기</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">노션 페이지</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact Us
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">팀장님 이메일@어쩌구</a></li>
+                        <li><a class="dropdown-item" href="#">isdiscodead@korea.ac.kr</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">UDR official page</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <!-- 메인 오버뷰 -->
+      <section id="main" class="container">
+        <section class="video">
+          <div>
+            <a href="">
+              <img src="img/tumbnail.png" alt="" />
+              <h3>비디오 출력</h3>
+            </a>
+          </div>
+          <div>
+            <input class="btn btn-secondary btn-lg" type="button" value="만들기 시작" />
+          </div>
         </section>
+      </section>
     </div>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
 </html>
