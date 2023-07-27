@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./reset.css">
+    <link rel = "stylesheet" href = "./style.css">
+
+
+    <title>시니스크2</title>
+</head>
+<body>
+    <div id = "wrapper">
+        <header id = "header">
+            <h2>쉽고 빠르고 저렴하게</h2>
+            <h2>고령층을 고려한 키오스크를 만들어보세요!</h2>
+
+        </header>
+    </div>
+    <main>
+        <form action = "#" method = "post" id = "loginFrm">
+            <fieldset>
+                <legend class = "skip">로그인</legend>
+                <ul>
+                    <li>
+                        <span class = "id_bg"></span>
+                        <span><input type = "text" name = "user_id" placeholder = "Username"> </span>
+                        
+                    </li>
+                    <li class = "error id_error">아이디(이메일)을 입력해주세요</li>
+                    <li>
+                        <span class = "pw_bg"></span>
+                        <span><input type = "password" name = "user_pw" placeholder = "****"></span>
+                        <span class = "pw_show_hide" title = "문자보이기"></span>
+                    </li>
+                    <li class = "error pw_error">비밀번호를 입력해주세요</li>
+                </ul>
+                <div class ="btm">
+                    <a href = "#" class = "idpw_search">아이디(이메일)/비밀번호 찾기</a>
+                    
+                </div>
+                <button type = "submit" id = "login_btn">로그인</button>
+                <button type = "submit" id = "join_btn">회원가입</button>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
