@@ -4,33 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./reset.css">
-    <link rel = "stylesheet" href = "./style.css">
+    <link rel = "stylesheet" href = "./style4.css">
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>시니스크4</title>
 </head>
 <body>
     <div id = "wrapper">
-        <header id = "header">
-            <h2>고령층을 위한 키오스크 제작 플랫폼</h2>
-            <h2><시니스크></h2>
-
+        <header>
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center"> 
+                    <a class="text-3xl font-bold pr-3 primary" href="#">고령층을 위한<br>키오스크 제작 플랫폼</a>
+                </div>
+            </nav>
         </header>
     </div>
     <main>
-        <button type = "prev" id = "preview">prev</button>
-        <h3>업장 정보를 입력해주세요.</h3>
-        <button type = "next" id = "next">next></button>
+        <div class = "flex items-center justify-between">
+            <a class = "btn" href = "#"> prev </a>
+            <a class = "text-2xl pr-3">업장 정보를 입력해주세요.</a>
+            <a class = "btn" href = "#"> next </a>
+        </div>
+        
+        <div class = "flex items-center justify-between">
+            <form action = "#" method = "post" class = "categoryFrm">
+                <fieldset style = "width : 150">
+                    <legend class = "font-bold">Category</legend>
+                    <ul>
+                        <li>
+                            <span class = "store"></span>
+                            <h5>업장의 종류를 선택해주세요.</h5>
 
-        <div type = "category">
-            <h5>업장의 종류를 선택해주세요.</h5>
-            <select name = "store">
-                <option value = 'cafe'>카페</option>
-                <option value = 'food'>음식점</option>
-            </select>            
+                            <select name = "store">
+                                <option value = 'cafe'>카페</option>
+                                <option value = 'food'>음식점</option>
+                            </select>       
+                        </li> 
+                        <li>
+                            <h5>업장 이름을 입력해주세요.</h5>
+                            <span><input type = "text" name = "store" placeholder = "내용을 입력해주세요"> </span>
+                        </li>           
+                    </ul>
+                </fieldset>
+               
+            </form>
+                       
 
-            <h5>업장 이름을 입력해주세요.</h5>
-            <span><input type = "text" name = "store" placeholder = "내용을 입력해주세요"> </span>
+            
         </div>
 
     </main>
