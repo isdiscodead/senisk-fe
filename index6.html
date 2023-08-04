@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./reset.css">
-    <link rel = "stylesheet" href = "./style.css">
+    <link rel = "stylesheet" href = "./style6.css">
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>시니스크6</title>
 </head>
 <body>
     <div id = "wrapper">
         <header id = "header">
-            <h2>고령층을 위한 키오스크 제작 플랫폼</h2>
-            <h2><시니스크></h2>
-
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center"> 
+                    <a class="text-3xl font-bold pr-3 primary" href="#">고령층을 위한<br>키오스크 제작 플랫폼</a>
+                </div>
+            </nav>
         </header>
     </div>
     <main>
-        <button type = "prev" id = "preview">prev</button>
-        <h3>메뉴 정보 입력</h3>
-        <button type = "next" id = "next">next></button>
+        <div class = "flex items-center justify-between">
+            <a class = "btn" href = "#"> prev </a>
+            <a class = "text-2xl pr-3">메뉴 정보 입력</a>
+            <a class = "btn" href = "#"> next </a>
+        </div>
+        <div class = "flex items-center justify-between">
+            <form action = "#" method = "post" class = "menuFrm" >
+                <fieldset style = "width : 150">
+                    <legend class = "font-bold">메뉴 입력</legend>
+                    <ul>
+                        <li>
+                            <span class= "menu"></span>
+                            <h4>메뉴정보를 입력해주시거나,</h4>
+                            <h4>CSV 혹은 엑셀 파일을 업로드 해주세요.</h4>
+                            
+                        </li>
+                        <li>
+                            <a href = "#" download></a>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+            </form>
 
-        <h4>메뉴정보를 입력해주시거나,</h4>
-        <h4>CSV 혹은 엑셀 파일을 업로드 해주세요.</h4>
+        </div>  
+        <div class = "flex items-center justify-center">
+            <a class="btn-big my-5" href="#">파일 업로드</a>        
+        </div>
 
-        <button type = "upload" id = "upload">파일 업로드</button>
-        
+
 
     </main>
 </body>
