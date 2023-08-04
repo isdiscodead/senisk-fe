@@ -1,0 +1,28 @@
+
+:root {
+    --dark: #333333;
+    --light: #fdfdfd;
+    --medium: #aaaaaa;
+    --primary: #83b068;
+    --secondary: #68a9b0;
+    --warning: #edc447;
+    --danger: #ed5d47;
+    --border: #cccccc;
+}
+
+.primary {
+    color: #83b068;
+}
+.danger {
+    color: #ed5d47;
+}
+
+html {
+    color: var(--dark);
+}
+
+nav {
+    box-shadow: 1px 1px 5px #cccccc;
+    padding: 1rem;
+    margin-bottom : 50px;
+}
