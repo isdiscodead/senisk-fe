@@ -41,6 +41,7 @@ components
 */
 
 .btn-big {
+    width: auto;
     display: flex;
     border-radius: 0.5rem;
     padding: 1.5rem 3rem;

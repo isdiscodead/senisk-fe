@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel = "stylesheet" href = "./reset.css">
-    <link rel = "stylesheet" href = "./style2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style2.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>시니스크2</title>
-</head>
+  </head>
 
-<body>
-    <div id = "p-1.5">
-        <header>
-            <nav class="flex items-center justify-between">
-                <div class="flex items-center"> 
-                    <a class="text-3xl font-bold pr-3 primary" href="#">쉽고 빠르고 저렴하게<br>고령층을 위한 키오스크 제작 플랫폼</a>
-                </div>
-            </nav>
-        </header>
+  <body>
+    <div class="p-1.5">
+      <header>
+        <nav class="flex items-center">
+          <a class="text-3xl font-bold pr-3 primary" href="#">시니스크</a>
+          <span class=""
+            >쉽고 빠르고 저렴하게, <br />
+            고령층을 위한 키오스크 제작 플랫폼</span
+          >
+        </nav>
+      </header>
     </div>
-    <main class = "flex items-center justify-between">
-        <form action = "#" method = "post" class = "loginFrm" >
-            <fieldset style = "width : 150">
-                <legend class = "font-bold">Login</legend>
-                <ul>
-                    <li>
-                        <span class = "id_bg"></span>
-                        <span><input type = "text" name = "user_id" placeholder = " Username"> </span>
-                        
-                    </li>
-                    <li class = "error id_error">아이디(이메일)을 입력해주세요</li>
-                    <li>
-                        <span class = "pw_bg"></span>
-                        <span><input type = "password" name = "user_pw" placeholder = " ****"></span>
-                        <span class = "pw_show_hide" title = "문자보이기"></span>
-                    </li>
-                    <li class = "error pw_error">비밀번호를 입력해주세요</li>
-                </ul>
-                <a class = "btn-big my-5" href = "#">로그인</a>
-
-                <div>
-                    <span><a href = "#" class = "btn">아이디(이메일)/비밀번호 찾기</a></span>
-                    <span><a href = "#" class = "btn">회원가입</a></span>
-
-                </div>
-
-
-            </fieldset>
-        </form>
+    <main class="flex items-center justify-between container">
+      <form action="#" method="post" class="loginFrm">
+        <fieldset>
+          <legend class="font-bold">Login</legend>
+          <div class="flex items-start">
+            <ul>
+              <li>
+                <span class="id_bg"></span>
+                <span
+                  ><input type="text" name="user_id" placeholder=" Username" />
+                </span>
+              </li>
+              <li class="error id_error">아이디(이메일)을 입력해주세요</li>
+              <li>
+                <span class="pw_bg"></span>
+                <span
+                  ><input type="password" name="user_pw" placeholder=" ****"
+                /></span>
+                <span class="pw_show_hide" title="문자보이기"></span>
+              </li>
+              <li class="error pw_error">비밀번호를 입력해주세요</li>
+            </ul>
+            <div class=" mx-5 ">
+                <a class="btn w-40 my-2" href="#">로그인</a>
+                <p class="text-right"><a href="#" >아이디/비밀번호 찾기</a></p>
+                <p class="text-right"><a href="#" >회원가입</a></p>
+            </div>
+          </div>
+         
+          
+            
+        </fieldset>
+      </form>
     </main>
-</body>
+  </body>
 </html>
