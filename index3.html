@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./reset.css">
+    <link rel = "stylesheet" href = "./style.css">
     <link rel = "stylesheet" href = "./style3.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,33 +15,46 @@
         <header>
             <nav class="flex items-center justify-between">
                 <div class="flex items-center"> 
-                    <a class="text-3xl font-bold pr-3 primary" href="#">고령층을 위한<br>키오스크 제작 플랫폼</a>
+                  <a class="text-3xl font-bold pr-3 primary" href="#">시니스크</a>
+                  <span class="">고령층을 위한 키오스크 제작 플랫폼</span>
                 </div>
-            </nav>
-        </header>
+                <div class="flex items-center">
+                  <img src='https://picsum.photos/250/250' class="w-10 rounded-full mr-3"/>
+                  <a href="./index2.html">User Name</a>
+                </div>
+              </nav>
+          </header>
     </div>
-    <main>
-        <div class = "flex items-center justify-between">
-            <a class = "btn" href = "#"> prev </a>
+    <main class="container">
+        <div class = "flex items-center justify-between mt-5">
+            <a class = "btn" href = "/index.html"> prev </a>
             <a class = "text-2xl pr-3">키오스크에 적용할 UI 템플릿을 선택해주세요.</a>
-            <a class = "btn" href = "#"> next </a>
+            <a class = "btn" href = "/index4.html"> next </a>
         </div>
-        <div class = "flex items-center justify-between">
+        <div class = "flex items-center justify-between my-10">
             <ul>
-                <img src = "/img/template.png">
-                <h4>일반 키오스크</h4>
+                <a>
+                    <img src = "/img/template.png">
+                    <h4 class="text-center">일반 키오스크</h4>
+                </a>  
             </ul>
             <ul>
-                <img src = "/img/template.png">
-                <h4>고령층 친화</h4>
+                <a>
+                    <img src = "/img/template.png">
+                    <h4 class="text-center">고령층 친화</h4>
+                </a>
             </ul>
             <ul>
-                <img src = "/img/template.png">
-                <h4>일반 / 고령층 선택</h4>
+                <a>
+                    <img src = "/img/template.png">
+                    <h4 class="text-center">일반 / 고령층 선택</h4>
+                </a>
             </ul>
             <ul>
-                <img src = "/img/template.png">
-                <h4>고령층 친화 MAX</h4>
+                <a>
+                    <img src = "/img/template.png">
+                    <h4 class="text-center">고령층 친화 MAX</h4>
+                </a>
             </ul>
         </div>
 
