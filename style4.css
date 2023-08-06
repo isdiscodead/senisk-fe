@@ -1,8 +1,10 @@
 .categoryFrm {
-    border : 1px solid var(--dark);
     padding: 1rem 2rem;
-    margin: auto;
-    background-color : var(--medium);
+    margin: 10vh auto;
+    width: 45vw;
+    box-shadow: 1px 1px 5px #cccccc;
+    padding: 1rem;
+    background-color: var(--light);
 }
 
 

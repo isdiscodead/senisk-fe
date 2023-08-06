@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./reset.css">
+    <link rel = "stylesheet" href = "./style.css">
     <link rel = "stylesheet" href = "./style5.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
     <title>시니스크5</title>
 </head>
 <body>
@@ -14,16 +18,21 @@
         <header>
             <nav class="flex items-center justify-between">
                 <div class="flex items-center"> 
-                    <a class="text-3xl font-bold pr-3 primary" href="#">쉽고 빠르고 저렴하게<br>고령층을 위한 키오스크 제작 플랫폼</a>
+                  <a class="text-3xl font-bold pr-3 primary" href="#">시니스크</a>
+                  <span class="">고령층을 위한 키오스크 제작 플랫폼</span>
                 </div>
-            </nav>
-        </header>
+                <div class="flex items-center">
+                  <img src='https://picsum.photos/250/250' class="w-10 rounded-full mr-3"/>
+                  <a href="./index2.html">User Name</a>
+                </div>
+              </nav>
+          </header>
     </div>
-    <main>
-        <div class = "flex items-center justify-between">
-            <a class = "btn" href = "#"> prev </a>
+    <main class="container">
+        <div class = "flex items-center justify-between mt-5">
+            <a class = "btn" href = "/index4.html"> prev </a>
             <a class = "text-2xl pr-3">키오스크 사용자화</a>
-            <a class = "btn" href = "#"> next </a>
+            <a class = "btn" href = "/index6.html"> next </a>
         </div>
         <div class = "flex items-center justify-between">
             <form action = "#" method = "post" class = "colorFrm">
@@ -33,13 +42,13 @@
                         <li>
                             <span class = "main_color"></span>
                             <h5>사용할 메인 테마 컬러를 선택해주세요.</h5>  
-                            <span><input type = "text" name = "store" placeholder = "내용을 입력해주세요"> </span>
+                            <span><input type="text" data-coloris></span>
 
                         </li> 
                         <li>
                             <span class = "sub_color"></span>
                             <h5>사용할 서브 테마 컬러를 선택해주세요.</h5>  
-                            <span><input type = "text" name = "store" placeholder = "내용을 입력해주세요"> </span>
+                            <span><input type="text" data-coloris></span>
                         </li>           
                     </ul>
                 </fieldset>

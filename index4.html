@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./reset.css">
+    <link rel = "stylesheet" href = "./style.css">
     <link rel = "stylesheet" href = "./style4.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,19 +15,24 @@
         <header>
             <nav class="flex items-center justify-between">
                 <div class="flex items-center"> 
-                    <a class="text-3xl font-bold pr-3 primary" href="#">고령층을 위한<br>키오스크 제작 플랫폼</a>
+                  <a class="text-3xl font-bold pr-3 primary" href="#">시니스크</a>
+                  <span class="">고령층을 위한 키오스크 제작 플랫폼</span>
                 </div>
-            </nav>
-        </header>
+                <div class="flex items-center">
+                  <img src='https://picsum.photos/250/250' class="w-10 rounded-full mr-3"/>
+                  <a href="./index2.html">User Name</a>
+                </div>
+              </nav>
+          </header>
     </div>
-    <main>
-        <div class = "flex items-center justify-between">
-            <a class = "btn" href = "#"> prev </a>
+    <main class="container">
+        <div class = "flex items-center justify-between mt-5">
+            <a class = "btn" href = "/index3.html"> prev </a>
             <a class = "text-2xl pr-3">업장 정보를 입력해주세요.</a>
-            <a class = "btn" href = "#"> next </a>
+            <a class = "btn" href = "/index5.html"> next </a>
         </div>
         
-        <div class = "flex items-center justify-between">
+        <div class = "flex items-center justify-between my-10">
             <form action = "#" method = "post" class = "categoryFrm">
                 <fieldset style = "width : 150">
                     <legend class = "font-bold">Category</legend>
